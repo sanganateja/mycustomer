@@ -7,7 +7,7 @@ CREATE TABLE [Customer].[Abode]
 [Start_date] [datetime] NULL,
 [End_date] [datetime] NULL,
 [year] [int] NULL,
-[secound year] [int] NULL
+[secound year] [int] NULL,
 [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF__Abode__ModifiedD__4316F928] DEFAULT (getdate()),
 [leafyear] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [newyear] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
