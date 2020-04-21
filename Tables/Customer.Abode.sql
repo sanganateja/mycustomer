@@ -8,7 +8,8 @@ CREATE TABLE [Customer].[Abode]
 [End_date] [datetime] NULL,
 [year] [int] NULL,
 [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF__Abode__ModifiedD__4316F928] DEFAULT (getdate()),
-[leafyear] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[leafyear] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[newyear] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [Customer].[Abode] ADD CONSTRAINT [PK__Abode__2E2462D880312DA2] PRIMARY KEY CLUSTERED  ([Abode_ID]) ON [PRIMARY]
