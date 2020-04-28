@@ -7,7 +7,8 @@ CREATE TABLE [Customer].[Address]
 [County] [nvarchar] (30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [PostCode] [nvarchar] (15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF__Address__Modifie__3A81B327] DEFAULT (getdate()),
-[Street] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[Street] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[continent] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [Customer].[Address] ADD CONSTRAINT [PK__Address__091C2A1B0FE46C4E] PRIMARY KEY CLUSTERED  ([AddressID]) ON [PRIMARY]
